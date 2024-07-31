@@ -1,0 +1,87 @@
+@import url(./fonts.css);
+
+:root {
+  --font-roboto: "Roboto";
+  --font-montserrat: "Montserrat";
+}
+
+body {
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: var(--font-roboto), var(--font-montserrat), sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  background: var(
+    --Background-Web_Full,
+    radial-gradient(
+      61.4% 35.18% at 88.44% 104.58%,
+      #fff8d1 0,
+      rgba(255, 248, 209, 0) 100%
+    ),
+    radial-gradient(
+      24.2% 54.94% at 114.53% 46.02%,
+      #fff8d1 0,
+      rgba(255, 248, 209, 0) 100%
+    ),
+    radial-gradient(
+      44.1% 20.6% at 70.31% -1.46%,
+      #fff8d1 0,
+      rgba(255, 248, 209, 0) 100%
+    ),
+    radial-gradient(
+      51.78% 69.08% at 109.69% 36.7%,
+      #d4d8fc 0,
+      rgba(212, 216, 252, 0) 100%
+    ),
+    radial-gradient(
+      43.58% 54.37% at 71.82% 66.11%,
+      #d4d8fc 0,
+      rgba(212, 216, 252, 0) 100%
+    ),
+    radial-gradient(
+      69.89% 86.85% at 17.08% 51.31%,
+      #ffe9dc 0,
+      rgba(255, 233, 220, 0) 100%
+    ),
+    radial-gradient(
+      46.43% 46.55% at 12.53% 7.34%,
+      #ffe9dc 0,
+      rgba(255, 233, 220, 0) 100%
+    ),
+    #fff
+  );
+}
+
+.main__rich__container {
+  width: 100%;
+  margin: 24px 0;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.blocks {
+  width: 200px;
+  height: 150px;
+  border: 5px solid tomato;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .main__rich__container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__rich__container {
+    width: 976px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main__rich__container {
+    width: 1366px;
+  }
+}
