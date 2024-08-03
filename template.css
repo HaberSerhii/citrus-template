@@ -5,6 +5,30 @@
   --font-montserrat: "Montserrat";
 }
 
+.lang {
+  display: none;
+}
+
+.lang.active {
+  display: block;
+}
+
+.button__language {
+  margin: 20px 0 0 0;
+  width: 250px;
+  height: 50px;
+  border: 3px solid orange;
+  border-radius: 10px;
+  background-color: transparent;
+  font: var(--font-montserrat);
+  font-size: medium;
+  font-weight: 600;
+}
+.button__language:hover {
+  background-color: rgb(92, 91, 91);
+  color: #ffe9dc;
+}
+
 body {
   margin: 0;
   display: grid;
