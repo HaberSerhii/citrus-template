@@ -14,15 +14,20 @@
 }
 
 .button__language {
-  margin: 20px 0 0 0;
-  width: 250px;
-  height: 50px;
-  border: 3px solid orange;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 25px 0 0 0px;
+  width: 200px;
+  padding: 10px 20px;
+  border: 2px solid grey;
   border-radius: 10px;
   background-color: transparent;
   font: var(--font-montserrat);
   font-size: medium;
   font-weight: 600;
+  opacity: 0.25;
 }
 .button__language:hover {
   background-color: rgb(92, 91, 91);
@@ -30,6 +35,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   display: grid;
   align-items: center;
@@ -93,18 +99,30 @@ body {
 }
 
 @media (min-width: 768px) {
+  .button__language {
+    top: 0%;
+    left: 40%;
+  }
+
   .main__rich__container {
     width: 720px;
   }
 }
 
 @media (min-width: 1024px) {
+  .button__language {
+    left: 42.5%;
+  }
+
   .main__rich__container {
     width: 976px;
   }
 }
 
 @media (min-width: 1440px) {
+  .button__language {
+    left: 45%;
+  }
   .main__rich__container {
     width: 1366px;
   }
